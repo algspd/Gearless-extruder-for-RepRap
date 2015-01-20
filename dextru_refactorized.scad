@@ -32,7 +32,7 @@ module base(){
       translate([24.5,40,53]) rotate([90,0,0]) cylinder(r=2, h=100, center=true);
       translate([55.5,40,53]) rotate([90,0,0]) cylinder(r=2, h=100, center=true);
       // Motor shaft
-      translate([40,40,37.5]) rotate([90,0,0]) cylinder(r=11.5, h=100, center=true);
+      translate([40,40,37.5]) rotate([90,0,0]) cylinder(r=12, h=100, center=true);
       // Idler input hole
       translate([40,0,26]) cube([50,32,23]);
       // Idler groove
