@@ -9,7 +9,7 @@ module base(){
       // Motor mount
       translate([17.5,32,15]) cube([45,8,45]);
       // Filament guide
-      translate([38,4,15]) cube([12,28,45]);
+      translate([34,4,15]) cube([16,28,45]);
       translate([40,18,37.5]) rotate([90,0,0]) cylinder(r=15, h=28, center=true);
     }
 
@@ -40,7 +40,9 @@ module base(){
       // Width excess
       cube([5,45,20]);
       // Tighten bolt
-      translate([50,13,55]) rotate([0,90,0]) cylinder(r=4.5/2, h=1000, center=true);
+      translate([50,13,55]) rotate([0,90,0]) cylinder(r=4.5/2, h=50, center=true);
+      // Tighten bolt nut hole
+      translate([33,13,55]) rotate([0,90,0]) cylinder(r=7.5/2, h=10, center=true,$fn=6);
     }
   }
 }
@@ -67,4 +69,4 @@ module idler(){
 }
 
 base();
-idler();
+//idler();
